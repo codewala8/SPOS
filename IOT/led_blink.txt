@@ -1,0 +1,23 @@
+import RP1.GPIO as GPIO
+
+from time import sleep
+
+GPIO.setwarnings (False)
+
+GPIO.setmode (GPIO. BOARD)
+
+GPIO.setup(10, GPIO.OUT, initial GPIO.LOW)
+
+while True:
+
+	GPIO.output(10, GPIO.HIGH)
+
+	print ("HIGH")
+
+	sleep(1)
+
+	GPIO.output(10, GPIO.LOW)
+
+	print ("Low")
+
+	sleep(1)

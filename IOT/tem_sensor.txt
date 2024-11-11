@@ -1,0 +1,12 @@
+import time
+
+from wither@sensor import WiTherm Sensor
+
+sensor WiTherm Sensor()
+
+while True:
+	temperature sensor.get temperature()
+
+	print("Temperature in celcius is a "temperature)
+
+	time.sleep(1)
